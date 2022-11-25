@@ -1,6 +1,5 @@
 MeCab
 streamlit
-time
 ipadic
 pandas
 wordcloud
