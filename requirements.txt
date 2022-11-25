@@ -1,6 +1,6 @@
 MeCab
-streamlit
+streamlit==1.13.0
 ipadic
-pandas
-wordcloud
-matplotlib
+pandas==1.4.4
+wordcloud==1.8.2.2
+matplotlib==3.5.2
