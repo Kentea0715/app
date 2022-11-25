@@ -1,4 +1,4 @@
-MeCab
+mecab-python3
 streamlit==1.13.0
 ipadic
 pandas==1.4.4
