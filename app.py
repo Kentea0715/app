@@ -65,7 +65,7 @@ if submitted:
     word_chain = ' '.join(word_list)
 
     # ワードクラウド作成
-    W = WordCloud(width=640, height=480, background_color='white', colormap='inferno', font_path='C:\Windows\Fonts\yumin.ttf').generate(word_chain)
+    W = WordCloud(width=640, height=480, background_color='white', colormap='inferno', font_path='ipaexg.ttf').generate(word_chain)
     
     #ワードクラウドの出力
     plt.imshow(W)
