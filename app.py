@@ -22,9 +22,9 @@ class CustomMeCabTagger(MeCab.Tagger):
             results.append([surface, *feature])
         return pd.DataFrame(results, columns=type(self).COLUMNS)
 
-st.title('形態素解析_WordCloud生成')
+st.title('形態素解析_WordCloud生成(日本語限定)')
 with st.form("my_form", clear_on_submit=False):
-    what_1 = st.text_input('解析したいテキストを入力してください')
+    what_1 = st.text_input('解析したいテキストを入力してください！(歌詞など)')
     what_2 = what_1
     submitted = st.form_submit_button("スタート!")
 
