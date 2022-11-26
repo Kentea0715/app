@@ -52,7 +52,7 @@ if submitted:
     df = tagger.parseToDataFrame(what_1)
     st.write(df.loc[:,['表層形', '品詞', '原型']])
 
-
+    tagger = CustomMeCabTagger('')
     node_2 = tagger.parseToNode(what_2)
     word_list = []
     while node_2:
