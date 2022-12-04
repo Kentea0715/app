@@ -21,14 +21,22 @@ class CustomMeCabTagger(MeCab.Tagger):
             feature = [None if f == '*' else f for f in feature.split(',')]
             results.append([surface, *feature])
         return pd.DataFrame(results, columns=type(self).COLUMNS)
-
+#タイトル
 st.title('形態素解析_WordCloud生成(日本語限定)')
+
+#ボタンが押されたら説明を表示
+if st.button('形態素解析とは？'):
+    st.write('文章を言語学的に意味を持つ単位である形態素に分割し、形態素の品詞の組み合わせを求めること。')
+if st.button('WordCloudとは？'):
+    st.wtite('使われている単語を可視化したもの。今回は名詞のみ。多く使われた単語ほど大きく表示されます。')
+    
+#文章入力
 with st.form("my_form", clear_on_submit=False):
-    what_1 = st.text_input('解析したいテキストを入力してください！(歌詞など)')
+    what_1 = st.text_input('解析したいテキストを入力してください！')
     what_2 = what_1
     submitted = st.form_submit_button("スタート!")
 
-
+#解析
 if submitted:
     with st.spinner('解析中'):
         time.sleep(2)
