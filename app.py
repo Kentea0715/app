@@ -28,7 +28,7 @@ st.title('形態素解析_WordCloud生成(日本語限定)')
 if st.button('形態素解析とは？'):
     st.write('文章を言語学的に意味を持つ単位である形態素に分割し、形態素の品詞の組み合わせを求めること。')
 if st.button('WordCloudとは？'):
-    st.wtite('使われている単語を可視化したもの。今回は名詞のみ。多く使われた単語ほど大きく表示されます。')
+    st.wite('使われている単語を可視化したもの。今回は名詞のみ。多く使われた単語ほど大きく表示されます。')
     
 #文章入力
 with st.form("my_form", clear_on_submit=False):
